@@ -209,15 +209,15 @@ a:hover {
   border: none;
   top: 0;
   left: 0;
-  width: 50px; /* Adjust the size of the light */
-  height: 50px; /* Adjust the size of the light */
+  width: 30px; /* Adjust the size of the light */
+  height: 30px; /* Adjust the size of the light */
   border-radius: 50%;
-  background-color: rgba(19, 5, 5, 0.11);
+  background-color: rgba(255, 255, 255, 0.048); 
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out; /* Adjust the transition duration */
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Adjust the spread of the shadow */
+  box-shadow: 0 0 400px rgba(255, 255, 255, 0.918); /* Adjust the spread of the shadow */
 }
 
 
@@ -258,8 +258,6 @@ a:hover {
     position: fixed;
     z-index: -1;
     /* transform: rotateX(180deg); */
-    min-width: 2000px;
-    min-height: 100%;
     object-fit: cover;
     left:0;
     bottom:0;
