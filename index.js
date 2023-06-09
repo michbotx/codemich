@@ -1,5 +1,5 @@
 
-const string = "marketer developer plant lady "; /* type your text here */
+const string = "marketer codemonkey gamer "; /* type your text here */
 const array = string.split("");
 const textId = document.getElementById("text");
 let timer;
