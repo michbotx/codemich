@@ -1,0 +1,346 @@
+@import url(reset.css);
+
+
+h1 {
+    font-size: 3em;
+    line-height: 1em;
+    padding-bottom: 25px;
+    font-family: 'Ribeye Marrow', cursive;
+
+}
+h3 {
+    font-size: 1em;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+/* ########## MAIN SECTION ##########  */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.cta {
+    padding: 0.5em 1.6rem;
+    display: inline-block;
+    background: #0000005b;
+    border: 3px solid #5bc8af;
+    margin-top: 1.3rem;
+
+}
+
+#text {
+    font-family: 'Zeyada', cursive;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    line-height: 1.5rem;
+  }
+  
+
+#main {
+    background-image: url(public/city-neon-bg.jpeg);
+    height: 100vh;
+    position: relative;
+}
+
+
+#main,
+#projects {
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: slidein 90s infinite alternate;
+}
+
+
+.about__wrapper,
+.projects__wrapper {
+    padding-top: 10px;
+}
+
+@keyframes slidein {
+  0% {
+    background-position: 10% top;
+    background-size: 3000px;
+  }
+  50% {
+    background-position: -400px 0px;
+    background-size: 3200px;
+  }
+  100% {
+    background-position: top;
+    background-size: 3000px;
+  }
+}
+
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding-top: 50px;
+}
+
+
+
+
+/* ########## EXPERIENCES SECTION ##########  */
+
+.container {
+    margin: 0 auto;
+    max-width: 1428px;
+    width: 100%;
+    max-height: 100%;
+    padding: 2em;
+}
+
+.custom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+#start__here {
+    height: 100%;
+    background: #130616; 
+    /* background: linear-gradient(to bottom, transparent,  #401849e8 5%,  #130616e8 20%); */
+}
+
+
+
+#about {
+    max-width: 100%;
+    padding-bottom: 25px;
+}
+
+.experience {
+    margin: 10px;
+    padding: 30px;
+    background: rgba(128, 0, 128, 0.452);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.experience-company h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experience-duration {
+    font-size: 14px;
+    color: #5bc8af;
+    margin-bottom: 20px;
+}
+
+.experience-details h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experience-description {
+    color: #f3f3f3;
+} 
+
+
+/* ########## PROJECTS SECTION ##########  */
+#projects  {
+    display: flex;
+    background-image: url(public/space-neon-bg.jpeg);
+    align-items: center;
+  }
+
+  .slider__cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .slider__item {
+    border-radius: 10px;
+    background: rgba(66, 1, 66, 0.452);
+    padding: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .slider__content {
+    background-image: url(public/splitter-design.png);
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin: 0 auto;
+  }
+  
+  .slider__active {
+    border-left: 10px solid #5bc8af; 
+    padding-left: 15px;
+    box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.13);
+    background: rgba(80, 1, 80, 0.658); 
+  }
+  
+  #lights-out {
+    border-radius: 15px;
+  } 
+
+.jc-center {
+    align-content: center;
+}
+
+/* #### MOUSE POINTERS ##### */
+
+
+#light {
+  position: fixed;
+  border: none;
+  top: 0;
+  left: 0;
+  width: 50px; /* Adjust the size of the light */
+  height: 50px; /* Adjust the size of the light */
+  border-radius: 50%;
+  background-color: rgba(19, 5, 5, 0.11);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out; /* Adjust the transition duration */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Adjust the spread of the shadow */
+}
+
+
+/* ########## SOCIALs ##########  */
+#contact {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 20vh;
+    background: #130616e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.social-icons {
+    display: flex; 
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    padding: 25px 0;
+    color: white;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    background: #f3f3f3;
+    border-radius: 50%;
+    padding: 5px;
+    object-fit: cover;
+}
+
+
+.flip {
+    position: fixed;
+    z-index: -1;
+    /* transform: rotateX(180deg); */
+    min-width: 2000px;
+    min-height: 100%;
+    object-fit: cover;
+    left:0;
+    bottom:0;
+    
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+span {
+    border: none;
+    background: #5bc8af;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-right: 4px;
+}
+
+.descriptors {
+    font-size: 11px;
+    display: block;
+    margin: 15px 0;
+    color: #1d3832;
+    font-weight: 600;
+}
+
+/* ########## MEDIA QUERIES ##########  */
+
+
+
+@media (min-width: 729px) {
+    .custom {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    #about,
+    .slider__cards {
+      flex-basis: 40%;
+      max-width: 500px;
+    }
+    .experiences-wrapper,
+    .slider__content {
+      flex-basis: 50%;
+    }
+    .experience {
+      max-width: 600px;
+    }
+
+    #projects,
+    #start__here,
+    #main {
+        padding: 4em;        
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    #about {
+        align-self: flex-start;
+    }
+
+    #text {
+        font-size: 2em;
+        letter-spacing: 0.2em;
+        line-height: 1.5rem;
+    }
+    .about__wrapper {
+        display:flex;
+        align-items: center;
+    }
+
+  }
+
+  @media (min-width: 1028px) {
+    h1 {
+        font-size: 5em;
+    }
+  }
